@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
+  devtool: 'inline-source-map',
   entry: './src/index.js',
+  mode: 'development',
   optimization: {
     // webpack 5: do not create dist/main.js.LICENSE.txt file
     minimizer: [
