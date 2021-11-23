@@ -1,10 +1,5 @@
-function component() {
-  const element = document.createElement('div');
+// import 'bootstrap';  // import all
+import Dropdown from 'bootstrap/js/dist/dropdown';
+import Collapse from 'bootstrap/js/dist/collapse';
 
-  // Lodash, now imported by this script
-  element.innerHTML = 'Hello webpack';
-
-  return element;
-}
-
-document.body.appendChild(component());
+import './scss/index.scss';
